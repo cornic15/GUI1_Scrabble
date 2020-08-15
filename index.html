@@ -1,0 +1,96 @@
+<!--   File: index.html
+   91.461 Assignment: Scrablle
+   Corina Mangione, UMass Lowell Computer Science, corina_mangione@student.uml.edu
+   Copyright (c) 2020 by Corina Mangione. All rights reserved. May be
+   freely
+   copied or excerpted for educational purposes with credit to the
+   author.
+   updated by Corina Mangione on August 10, 2020
+   -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Scrabble</title>
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/scrabble.css" media="screen">
+   </head>
+   <body>
+     <div id="main">
+<h1> Scrabble </h1>
+
+<!--<img id="A" src="img/Scrabble_Tile_A.jpg"/>
+<img id="board" src="img/board.PNG"/>-->
+
+<div id="letterRow">
+  <div id="l0" class="letter" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="l1" class="letter" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="l2" class="letter double" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="l3" class="letter" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="l4" class="letter" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="l5" class="letter double" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="l6" class="letter" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+<br><br><br><br><br>
+
+<div id="rack">
+
+  <div id="div0" class="rackLetter"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="div1" class="rackLetter"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="div2" class="rackLetter"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="div3" class="rackLetter"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="div4" class="rackLetter"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="div5" class="rackLetter"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="div6" class="rackLetter"  ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<!--
+
+  <div id="div2" class="rackLetter"  ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img class="di" id="drag2" src="img/Scrabble_Tile_B.jpg" data-letter="B" alt="Scrabble Tile" ondragend="dragEnd(event)" draggable="true" ondragstart="drag(event)">
+  </div>
+  <div id="div3" class="rackLetter"  ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img class="di" id="drag3" src="img/Scrabble_Tile_C.jpg" data-letter="C" alt="Scrabble Tile" ondragend="dragEnd(event)" draggable="true" ondragstart="drag(event)">
+  </div>
+  <div id="div4" class="rackLetter"  ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img class="di" id="drag4" src="img/Scrabble_Tile_Blank.jpg" alt="Scrabble Tile" ondragend="dragEnd(event)" draggable="true" ondragstart="drag(event)">
+  </div>
+  <div id="div5" class="rackLetter"  ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img class="di" id="drag5" src="img/Scrabble_Tile_Blank.jpg" alt="Scrabble Tile" ondragend="dragEnd(event)" draggable="true" ondragstart="drag(event)">
+  </div>
+  <div id="div6" class="rackLetter"  ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img class="di" id="drag6" src="img/Scrabble_Tile_Blank.jpg" alt="Scrabble Tile" ondragend="dragEnd(event)" draggable="true" ondragstart="drag(event)">
+  </div>
+-->
+<!--<div id="rackBg"></div>-->
+</div>
+
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<!--<img id="drag1" src="img\Scrabble_Tile_A.jpg" draggable="true" ondragstart="drag(event)">-->
+<div id="buttonBox">
+  <button onclick="buttonClick()">Click Me</button>
+  <button onclick="checkWord()">Submit Word</button>
+  <button onclick="setRack()">Reset Rack Letters</button>
+  <button onclick="location.reload()">Reset Game</button>
+
+
+  <div id="finalWord"></div>
+  <div id="scoreBox"></div>
+  <div>Set score: <span id="setScore">0</span></div>
+</div>
+
+
+
+
+
+<!--<input type="text" id="inc" value="0"></input>-->
+</div>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+      <script type='text/javascript' src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+      <script type='text/javascript' src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/additional-methods.js"></script>
+      <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+      <script src="words2.js"></script>
+      <script src = "scrabble.js"></script>
+   </body>
+</html>
